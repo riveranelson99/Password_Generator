@@ -3,7 +3,7 @@ Building upon the foundation of a java password generator.
 
 # screenshot
 
-![alt text]("./assets/images/Port_3_screenshot.png" raw=true)
+![Generator Example](assets/Port_3_screenshot.png)
 
 # link
 
