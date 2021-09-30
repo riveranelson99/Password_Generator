@@ -1,5 +1,4 @@
 // Assignment Code
-// Pseudo Code
 /*
 I want to prompt the user multiple times in order to establish password criteria
 The prompts will offer choices to the user that set up their password
@@ -13,9 +12,8 @@ var generateBtn = document.querySelector("#generate");
 
 /*
 Establish all variables globally to be called upon as needed
-The variables to be established are the password length, upper case characters, lower case characters, numbers, and special characters
+The variables to be established are the upper case characters, lower case characters, numbers, and special characters
 */
-var lengthChoice = 8;
 var upperCharacters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var lowerCharacters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o",  "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var numberCharacters = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
@@ -34,7 +32,7 @@ function userInput() {
   lengthChoice = parseInt(prompt("Choose a number between 8 and 128."));
 
   if (isNaN(lengthChoice) || lengthChoice < 8 || lengthChoice > 128) {
-    alert("Password length must be at least 8 characters long.");
+    alert("Password length must be in bewteen 8 and 128 characters.");
   return false;
   }
   if (confirm("Would you like to use UPPER case characters?")) {
@@ -78,10 +76,10 @@ function writePassword() {
   var inputResults = userInput();
 
   if (inputResults) {
-    var finalProduct = generatePassword();
+    var password = generatePassword();
     var passwordText = document.querySelector("#password");
   
-    passwordText.value = finalProduct;
+    passwordText.value = password;
   }
 }
 
