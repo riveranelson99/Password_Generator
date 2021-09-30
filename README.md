@@ -3,7 +3,7 @@ Building upon the foundation of a java password generator.
 
 # screenshot
 
-![Generator Example](assets/Port_3_screenshot.png)
+![Generator Example](assets/images/Port_3_screenshot.png)
 
 # link
 
